@@ -6,7 +6,7 @@ authors = ["Oliver Newcombe <revilo678@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11.11"
+python = "^3.9.0"
 spacy = "3.7.5"
 ipykernel = "^6.29.5"
 python-dotenv = "^1.0.1"
