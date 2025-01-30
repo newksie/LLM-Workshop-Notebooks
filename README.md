@@ -11,7 +11,7 @@ Just jump in wherever, these are what worked for me on my own plus a new PC. You
 2) Dowload VSCode (https://code.visualstudio.com/), other IDEs can work if you are familar, but these instructions will be tailored for VSCode.
 3) If you can clone this repo, do, but if you are not familiar with how to do that, just download the zip file (green 'code' button) and put it somewhere easy to access, perhaps documents.
 4) On VSCode, open a terminal. This should be on the top row of instructions.
-5) Write: "pip install poetry", press enter and hopefully it works. There should be ways to trouble shoot if not, GPT4o is fantastic for this. For windows there is also <b> "(Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | py - "</b> (from https://python-poetry.org/docs/#installing-with-the-official-installer), but this is more awkward. You can check installation with the command "poetry --version".
+5) Write: "pip install poetry", press enter and hopefully it works. There should be ways to trouble shoot if not, GPT4o is fantastic for this. You can check installation with the command "poetry --version".
 6) On VSCode, go to the file explorer option on the left hand side. Open folder, and click on the folder LLM-Workshop-Notebooks-main (click on the whole folder, not the lesson_notebooks one!!). Again, if you have cloned this, do it as you normally would. You should see all the folder contents on the left hand side.
 7) Back in the VSCode terminal again, ensure you are in the folder. You should see that represented in the command line, but to check do the command "ls" which should list the directory. You should see lesson_notebooks, .gitignore, poetry.lock, pyproject.toml and README. If not, use "cd" and "ls" in the terminal to make sure you're there (cheatsheet for what those mean here: https://www.codecademy.com/article/command-line-commands)
 8) IMPORTANT: run <b> "poetry config virtualenvs.in-project true" </b>. This means the .venv we create is easier to access. If there is a pop up for 'VSCode detected a virtual environment, would you like to set this for the directory?', or something similar past this point, say yes.
@@ -22,6 +22,7 @@ Notes:
 - This will take a fair amount of disc space (>1GB) so be prepared for that. If C++/XCode tools are needed too, this will really eat up space (6+ GB). The C++ tools is where I imagine most errors will occur.
 - If you are having other issues, I recommend instlling <b> python 3.12.8 </b>, this is the one I used which worked on multiple devices across multiple os. This should be a catch-all solution in many cases. If you have multiple python versions, make sure 3.12.8 (or any 3.12.x) is the one active ("python --version" in terminal/powershell)
 - Further to that, a clean install of python, with the 'add to path' box ticked, fixed a lot of my issues, especially on windows.
+- At step 5, for windows there is also <b> "(Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | py - "</b> (from https://python-poetry.org/docs/#installing-with-the-official-installer), but this is more awkward.
 - Common handy commands:
 
     "<b>poetry env remove --all</b>" (This deletes all poetry .venvs lying around, allowing you to start again if things go wrong with "poetry install" etc.).
