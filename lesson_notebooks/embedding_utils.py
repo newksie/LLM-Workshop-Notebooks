@@ -40,11 +40,11 @@ def scatter(x, y, labels, text):
 
 def get_embedding_glove(text):
     doc = nlp(text)
-    return doc.vector.reshape(1, 300)
+    return doc.vector.reshape(-1, 300)
 
 def get_embedding_SBERT(text):
     embeddings = model.encode(text)
-    return embeddings.reshape(1, 384)
+    return embeddings.reshape(-1, 384)
 
 def truncate_text(text, max_length=100):
     """Function to truncate text to a maximum length with ellipsis."""
