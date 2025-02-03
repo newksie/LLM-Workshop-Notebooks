@@ -59,7 +59,7 @@ def create_few_shot_messages(few_shot_df):
     """
     few_shot_messages = []
     for _, row in few_shot_df.iterrows():
-        few_shot_messages.append({"role": "user", "content": f"Translate the following Lithunian text into English: {row.gr}"})
+        few_shot_messages.append({"role": "user", "content": f"Translate the following French text into English: {row.fr}"})
         few_shot_messages.append({"role": "assistant", "content": row.en})
     return few_shot_messages
 
@@ -72,7 +72,7 @@ def create_prompt_message(french_text):
     Returns:
         dict: A dictionary representing the user prompt message.
     """
-    return {"role": "user", "content": f"Translate the following Lithunian text into English: {french_text}"} # CHANGE HERE IF YOU WOULD LIKE!!
+    return {"role": "user", "content": f"Translate the following French text into English: {french_text}"} # CHANGE HERE IF YOU WOULD LIKE!!
 
 def create_chat_entry_with_custom_id(custom_id, system_prompt, few_shot_messages, french_text, model="gpt-4o-mini", temperature=0, max_tokens=200):
     """
@@ -128,7 +128,7 @@ def create_jsonl_data_with_custom_id(df, few_shot_df, system_prompt, output_file
                 custom_id=custom_id,
                 system_prompt=system_prompt,
                 few_shot_messages=few_shot_messages,
-                french_text=row.gr,
+                french_text=row.fr,
                 model=model,
                 temperature=temperature,
                 max_tokens=max_tokens,
