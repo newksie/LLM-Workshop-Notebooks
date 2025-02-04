@@ -5,7 +5,7 @@ These are the notebooks, repo and data for a workshop I teach on embeddings and 
 
 ## Instructions 
 
-Just jump in wherever, these are what worked for me on my own plus a new PC. You are likely to have some issues - that is totally normal and debugging is as valuable a skill as anything in this workshop! Contact me (Oli) if you really are stuck, I'll try to help!
+Just jump in wherever, these are what worked for me on my own plus a new PC. You are likely to have some issues - that is totally normal and debugging is as valuable a skill as anything in this workshop! Contact me (Oli - revilo678@gmail.com) if you really are stuck, I'll try to help!
 
 1) Download Python (https://www.python.org/), we will need >=3.10 and <=3.12, I am using 3.12.8 but also checked 3.12.4. When installing make sure the box to add python to PATH is checked (basically check that on windows you can use python --version, rather than py --version)
 2) Dowload VSCode (https://code.visualstudio.com/), other IDEs can work if you are familar, but these instructions will be tailored for VSCode.
